@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+body{
+
+}
+
+h1,h2,h3,h4,h5{
+    color: black;
+}
+
+a{
+    color:snow;
+    text-decoration: none;
+}
+#header-names{
+    width: 100%;
+  
+} /* imagen del encabezado*/
+
+.hero{
+    background-image: url('imagenes/Diseño\ sin\ título.png');
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+
+}
+
+.title-countdown{
+    font-size: 1rem;
+    font-weight: 50;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.txt-countdown{
+    font-size: 0.7rem;
+    font-weight: 20;
+    color: black;
+}
+
+.timebox{
+    display:flex;
+    gap: 16px;
+}
+
+.time{
+    text-align: center;
+}
+
+.time p{
+    font-size: 0.5rem;
+    font-weight: 20;
+    color: black;
+}
+
+.btn-style{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+height: 40px;
+
+gap: 8px;
+border-radius: 100px;
+background: #99AFA3;
+color: snow;
+}
+
+.titulos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top:5%;
+    padding-bottom:5%;
+}
+
+.txt-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#dudas,#accordion{
+    background-image: url('imagenes/Diseño\ sin\ título.png');
+}
+
+.card, .card-header{
+    background-image: url('imagenes/Diseño\ sin\ título.png');
+}
+
+.card-body{
+    background-color: snow;
+}
+
+#bye{
+    background-image: url('imagenes/Diseño\ sin\ título.png');
+}
+
+.botones-forms{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}

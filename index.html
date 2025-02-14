@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Nit y Mario</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+  
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="imagenes/Ana y Mario.png" alt="header" id="header-names">
+</header>
+<section id="countdown">
+    <div class="hero">
+        <h1 class="title-countdown">3 DE MAYO DE 2025</h1>
+        <span class="title-countdown">Los invitamos a nuestro casamiento</span>
+        <span class="title-countdown">Faltan...</span>
+        <div class="timebox">
+            <div class="time">
+                <h2 id="days" class="txt-countdown">00</h2>
+                <p>Días</p>
+            </div>
+            <div class="time">
+                <h2 id="hours" class="txt-countdown" >00</h2>
+                <p>Horas</p>
+            </div>
+            <div class="time">
+                <h2 id="minutes" class="txt-countdown">00</h2>
+                <p>Minutos</p>
+            </div>
+            <div class="time">
+                <h2 id="seconds" class="txt-countdown">00</h2>
+                <p>Segundos</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="ceremonia">
+    <h1 class="titulos">Ceremonia</h1>
+    <span class="txt-box">
+        PARROQUIA<br>
+        DIRECCION<br>
+        HORARIO<br>
+    </span>
+    <a href="https://g.co/kgs/tMJzR4c"><button class="btn btn-style ">CÓMO LLEGAR</button></a><br>
+</section>
+
+<section id="fiesta">
+    <h1 class="titulos">Fiesta</h1>
+    <span class="txt-box">
+        PARROQUIA<br>
+        DIRECCION<br>
+        HORARIO<br>
+    </span>
+    <a href="#"><button class="btn btn-style ">CÓMO LLEGAR</button></a><br>
+
+</section>
+
+<section id="musica">
+
+</section>
+
+<section id="dudas">
+    <h1  class="titulos">Detalles</h1>
+    <div id="accordion">
+
+        <div class="card">
+          <div class="card-header">
+            <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+              Dress Code
+            </a>
+          </div>
+          <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+            <div class="card-body">
+              ELEGANTE
+            </div>
+          </div>
+        </div>
+      
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+              Regalo
+            </a>
+          </div>
+          <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+            <div class="card-body">
+              Lo que quieran decir... <br>
+              <p><b>Nombre del titular:</b><p>
+              <p>Nombre del titular</p>
+              <p><b>CBU:</b><p>
+              <p>NRO</p>
+              <p><b>Alias:</b><p>
+              <p>Alias</p>
+              <p><b>Banco x</b><p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+              Solo Adultos
+            </a>
+          </div>
+          <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+            <div class="card-body">
+              La fiesta es para adultos, no habrá guardería ni entretenimiento para niños.
+            </div>
+          </div>
+        </div>
+      
+      </div>
+</section>
+
+<section id="formulario">
+  <h1 class="titulos">Confirmación de asistencia</h1>
+  <h2 class="titulos">¡Esperamos que puedas acompañarnos!</h2>
+  <span class="txt-box">
+      Te pedimos que completes este formulario.
+      </span>
+      <span class="txt-box"> Si fuiste invitado/a con un acompañante,</span>
+      <span class="txt-box"><b>completar un formulario por persona </b></span>
+      
+    <div class="botones-forms">
+      <a href="https://forms.gle/FMfTr4oNsiAsQ4z26"><button class="btn btn-style ">VER FORMULARIO</button></a><br>
+      <a href="https://calendar.app.google/DFHehs6Ems9pzHUb7"><button class="btn btn-style ">AGENDAR EVENTO</button></a><br>
+    </div>
+</section>
+
+<section id="bye">
+  <span class="txt-box">
+    ¡Gracias!
+  </span>
+
+</section>
+
+<footer>
+
+</footer>
+
+<script>
+    const Days = document.getElementById('days');
+const Hours = document.getElementById('hours');
+const Minutes = document.getElementById('minutes');
+const Seconds = document.getElementById('seconds');
+
+const targetDate = new Date('May 3 2025 15:00:00').getTime();
+
+function timer () {
+    const currentDate = new Date().getTime();
+    const distance = targetDate - currentDate;
+
+    const days = Math.floor(distance / 1000 / 60 / 60 / 24);
+    const hours = Math.floor(distance / 1000 / 60 / 60) % 24;
+    const minutes = Math.floor(distance / 1000 / 60) % 60;
+    const seconds = Math.floor(distance / 1000) % 60;
+
+    Days.innerHTML = days;
+    Hours.innerHTML = hours;
+    Minutes.innerHTML = minutes;
+    Seconds.innerHTML = seconds;
+
+    if(distance<0){
+        Days.innerHTML = '00';
+        Hours.innerHTML = '00';
+        Minutes.innerHTML = '00';
+        Seconds.innerHTML = '00';
+
+    }
+
+
+}
+
+setInterval(timer,1000)
+</script>
+</body>
+</html>
