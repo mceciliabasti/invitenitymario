@@ -140,6 +140,8 @@ letter-spacing: var(--Label-Large-Tracking, 0.1px);
 height: 60px;
 padding: 5%;
 gap: 8px;
+font-size: 0.8em;
+width: max-content;
 border-radius: 100px;
 background: #99AFA3;
 color: snow;
@@ -168,6 +170,7 @@ letter-spacing: var(--Label-Large-Tracking, 0.1px);
     padding-left: 10%;
     padding-right: 10%;
     font-family: "Montserrat";
+    text-align: center;
 font-size: 12px;
 font-style: normal;
 font-weight: 500;
@@ -227,8 +230,9 @@ letter-spacing: var(--Label-Large-Tracking, 0.1px);
 }
 
 #countdown, #musica, #dudas, #fiesta, #ceremonia, #formulario {
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    
 }
 
 
