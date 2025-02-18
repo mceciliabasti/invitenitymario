@@ -221,6 +221,8 @@ letter-spacing: var(--Label-Large-Tracking, 0.1px);
 .botones-forms{
     margin-top: 5%;
     margin-bottom: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
     font-family: "Montserrat";
 font-size: 12px;
 font-style: normal;
@@ -232,7 +234,16 @@ letter-spacing: var(--Label-Large-Tracking, 0.1px);
 #countdown, #musica, #dudas, #fiesta, #ceremonia, #formulario {
     margin-top: 2%;
     margin-bottom: 2%;
+  
     
+}
+
+#musica, #fiesta{
+    border-top: #99AFA3 solid 1px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-top: 4%;
+    margin-bottom: 4%;
 }
 
 
@@ -277,7 +288,42 @@ letter-spacing: var(--Label-Large-Tracking, 0.1px);
   }
   
 
+  @-webkit-keyframes pulsate-fwd {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes pulsate-fwd {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  
+
   .scale-up-center {
 	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.pulsate-fwd {
+	-webkit-animation: pulsate-fwd 1s ease-in-out infinite both;
+	        animation: pulsate-fwd 1s ease-in-out infinite both;
 }
