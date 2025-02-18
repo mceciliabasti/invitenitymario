@@ -5,17 +5,47 @@
 }
 
 body{
-
+    background-image: url('imagenes/fondo.jpg');
+    background-repeat: repeat-y;
+    background-size: cover;
 }
 
 h1,h2,h3,h4,h5{
     color: black;
 }
+h4{
+    font-family: "Rethink Sans";
+    font-style: normal;
+    font-weight: 300;
+    line-height: var(--Label-Large-Line-Height, 20px); /* 166.667% */
+    letter-spacing: var(--Label-Large-Tracking, 0.1px);
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 a{
     color:snow;
     text-decoration: none;
+    font-family: "Rethink Sans";
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: var(--Label-Large-Line-Height, 20px); /* 166.667% */
+letter-spacing: var(--Label-Large-Tracking, 0.1px);
 }
+
+b{
+    font-family: "Rethink Sans";
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: var(--Label-Large-Line-Height, 20px); /* 166.667% */
+letter-spacing: var(--Label-Large-Tracking, 0.1px);
+}
+
 #header-names{
     width: 100%;
   
@@ -29,6 +59,12 @@ a{
     align-items: center;
     justify-content: center;
     color: #fff;
+    font-family: "Rethink Sans";
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: var(--Label-Large-Line-Height, 20px); /* 166.667% */
+letter-spacing: var(--Label-Large-Tracking, 0.1px);
 
 }
 
@@ -37,27 +73,57 @@ a{
     font-weight: 50;
     margin-bottom: 5px;
     color: black;
+    font-family: "Rethink Sans";
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: var(--Label-Large-Line-Height, 20px); /* 166.667% */
+letter-spacing: var(--Label-Large-Tracking, 0.1px);
 }
 
 .txt-countdown{
     font-size: 0.7rem;
     font-weight: 20;
     color: black;
+    font-family: "Rethink Sans";
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: var(--Label-Large-Line-Height, 20px); /* 166.667% */
+letter-spacing: var(--Label-Large-Tracking, 0.1px);
 }
 
 .timebox{
     display:flex;
     gap: 16px;
+    font-family: "Rethink Sans";
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: var(--Label-Large-Line-Height, 20px); /* 166.667% */
+letter-spacing: var(--Label-Large-Tracking, 0.1px);
 }
 
 .time{
     text-align: center;
+    font-family: "Rethink Sans";
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: var(--Label-Large-Line-Height, 20px); /* 166.667% */
+letter-spacing: var(--Label-Large-Tracking, 0.1px);
 }
 
 .time p{
     font-size: 0.5rem;
-    font-weight: 20;
+  
     color: black;
+    font-family: "Rethink Sans";
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: var(--Label-Large-Line-Height, 20px); /* 166.667% */
+letter-spacing: var(--Label-Large-Tracking, 0.1px);
 }
 
 .btn-style{
@@ -81,6 +147,13 @@ color: snow;
     justify-content: center;
     padding-top:5%;
     padding-bottom:5%;
+    text-align: center;
+font-family: "Great Vibes";
+font-size: 40px;
+font-style: normal;
+font-weight: 400;
+line-height: var(--Label-Large-Line-Height, 20px); /* 50% */
+letter-spacing: var(--Label-Large-Tracking, 0.1px);
 }
 
 .txt-box{
@@ -89,25 +162,67 @@ color: snow;
     justify-content: center;
     padding-left: 10%;
     padding-right: 10%;
+    font-family: "Rethink Sans";
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: var(--Label-Large-Line-Height, 20px); /* 166.667% */
+letter-spacing: var(--Label-Large-Tracking, 0.1px);
 }
 
 #dudas,#accordion{
     background-image: url('imagenes/Diseño\ sin\ título.png');
+    font-family: "Rethink Sans";
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: var(--Label-Large-Line-Height, 20px); /* 166.667% */
+letter-spacing: var(--Label-Large-Tracking, 0.1px);
 }
 
 .card, .card-header{
     background-image: url('imagenes/Diseño\ sin\ título.png');
+    font-family: "Rethink Sans";
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: var(--Label-Large-Line-Height, 20px); /* 166.667% */
+letter-spacing: var(--Label-Large-Tracking, 0.1px);
 }
 
 .card-body{
     background-color: snow;
+    font-family: "Rethink Sans";
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: var(--Label-Large-Line-Height, 20px); /* 166.667% */
+letter-spacing: var(--Label-Large-Tracking, 0.1px);
 }
 
 #bye{
     background-image: url('imagenes/Diseño\ sin\ título.png');
+    font-family: "Rethink Sans";
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: var(--Label-Large-Line-Height, 20px); /* 166.667% */
+letter-spacing: var(--Label-Large-Tracking, 0.1px);
 }
 
 .botones-forms{
     margin-top: 5%;
     margin-bottom: 5%;
+    font-family: "Rethink Sans";
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: var(--Label-Large-Line-Height, 20px); /* 166.667% */
+letter-spacing: var(--Label-Large-Tracking, 0.1px);
 }
+
+#countdown, #musica, #dudas, #fiesta, #ceremonia, #formulario {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
